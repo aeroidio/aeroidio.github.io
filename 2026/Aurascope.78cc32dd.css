@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("Montserrat-Regular.ef3026ae.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --safe-area-top: env(safe-area-inset-top, 0px);
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+body, html {
+  background-color: #ffea82;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  overflow: hidden;
+}
+
+#canvas-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#overlay {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+#overlay-img {
+  object-fit: contain;
+  width: auto;
+  max-width: 75%;
+  height: auto;
+  max-height: 75%;
+  position: relative;
+}
+
+#overlay-text {
+  z-index: 2;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #fff;
+  text-shadow: -1px -1px 5px #507177, 1px -1px 5px #507177, -1px 1px 5px #507177, 1px 1px 5px #507177;
+  font-size: 3em;
+  position: absolute;
+}
+/*# sourceMappingURL=Aurascope.78cc32dd.css.map */
